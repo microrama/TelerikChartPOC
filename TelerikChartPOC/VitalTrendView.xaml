@@ -11,7 +11,7 @@
                     <local:ViewModel1 />
                 </telerikChart:RadCartesianChart.BindingContext>-->
             <telerikChart:RadCartesianChart.HorizontalAxis>
-                <telerikChart:DateTimeContinuousAxis LabelFitMode="Rotate"
+                <telerikChart:DateTimeContinuousAxis 
                                                  MajorStep="4"
                                                  MajorStepUnit="Hour" 
                                                  LabelFormat="HH:mm"
@@ -36,6 +36,13 @@
                                               HandleDoubleTap="True"/>
                 <telerikChart:ChartTooltipBehavior TriggerMode="Tap" />
             </telerikChart:RadCartesianChart.ChartBehaviors>
+
+            <telerikChart:RadCartesianChart.Grid>
+                <telerikChart:CartesianChartGrid StripLinesVisibility="Y"
+                                             MajorLinesVisibility="XY"
+                                             MajorLineThickness="1" />
+            </telerikChart:RadCartesianChart.Grid>
+            
         </telerikChart:RadCartesianChart>
     </ContentView.Content>
 </ContentView>
